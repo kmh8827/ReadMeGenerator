@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const { fileURLToPath } = require('url');
 
 //Inputs: title, description, installation, usage, contribution, test instructions, github username, e-mail
 //Checkbox: license
@@ -56,15 +57,49 @@ inquirer.prompt([
         ]
     }
 ]).then(response => {
+
     fs.writeFileSync('README.md', 
-    `#<center>${response.title}</center>
-    Description ${response.description}
-    ${response.installation}
-    ${response.usage}
-    ${response.contribution}
-    ${response.instructions}
-    ${response.email}
-    ${response.github}
-    This is checkbox ${response.license}
-    </html>`, (error) => error ? console.log(error) : console.log('README generator'));
+`# Title 
+
+${response.title}
+
+### Description 
+
+${response.description}
+
+### Installation Instructions
+
+${response.installation}
+
+### What The Program Can Do
+
+${response.usage}
+
+### Contribution Instructions
+
+${response.contribution}
+
+### User Instructions
+
+${response.instructions}
+
+### Email Address
+
+${response.email}
+
+### Github Address
+
+${response.github}
+
+### Liscensing
+
+    \n`, (error) => error ? console.log(error) : console.log('README generator'));
+
+for (const element of response.license) {
+    fs.appendFileSync('README.md',`${element}\r\n`, (error) => error ? console.log(error) : console.log('Checkbox'));
+}
+
 });
+
+
+

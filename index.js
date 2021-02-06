@@ -11,7 +11,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'descript',
+        name: 'description',
         message: 'Please enter a brief descript of your program?'
     },
     {
@@ -44,4 +44,27 @@ inquirer.prompt([
         name: 'github',
         message: 'What is your github username?'
     },
-]).then()
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'What licensing are you using for your program?',
+        choices: [
+            {name: 'apache', short: '1', value: 'apache', checked: false },
+            {name: 'gpl', short: '2', value: 'gpl', checked: false },
+            {name: 'mpl', short: '3', value: 'mpl', checked: false },
+            {name: 'expat', short: '4', value: 'expat', checked: false },
+        ]
+    }
+]).then(response => {
+    fs.writeFileSync('README.md', 
+    `The title of this page is ${response.title}
+    Description ${response.description}
+    ${response.installation}
+    ${response.usage}
+    ${response.contribution}
+    ${response.instructions}
+    ${response.email}
+    ${response.github}
+    This is checkbox ${response.license}
+    </html>`, (error) => error ? console.log(error): console.log('README generator'));
+});

@@ -57,7 +57,7 @@ inquirer.prompt([
     }
 ]).then(response => {
     fs.writeFileSync('README.md', 
-    `The title of this page is ${response.title}
+    `#<center>${response.title}</center>
     Description ${response.description}
     ${response.installation}
     ${response.usage}
@@ -66,5 +66,5 @@ inquirer.prompt([
     ${response.email}
     ${response.github}
     This is checkbox ${response.license}
-    </html>`, (error) => error ? console.log(error): console.log('README generator'));
+    </html>`, (error) => error ? console.log(error) : console.log('README generator'));
 });

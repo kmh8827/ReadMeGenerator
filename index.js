@@ -59,40 +59,58 @@ inquirer.prompt([
 ]).then(response => {
 
     fs.writeFileSync('README.md', 
-`# Title 
+`# ${response.title}  
+  
+  
+  
+### Description  
+  
+${response.description}  
 
-${response.title}
-
-### Description 
-
-${response.description}
-
-### Installation Instructions
-
-${response.installation}
-
-### What The Program Can Do
-
-${response.usage}
-
-### Contribution Instructions
-
-${response.contribution}
-
-### User Instructions
-
-${response.instructions}
-
-### Email Address
-
-${response.email}
-
-### Github Address
-
-${response.github}
-
-### Liscensing
-
+  
+## Table of Contents  
+  
+[Description](#description)  
+[Installation](#installation)  
+[Usage](#usage)  
+[Contribution](#contributing)  
+[Test Instructions](#test-instructions)  
+[Questions](#questions)  
+[Licensing](#licensing)  
+  
+  
+### Installation  
+  
+${response.installation}  
+  
+### Usage  
+  
+${response.usage}  
+  
+### Contributing  
+  
+${response.contribution}  
+  
+### Test Instructions  
+  
+${response.instructions}  
+  
+  
+  
+## Questions  
+  
+### Email Address  
+  
+${response.email}  
+  
+### Github Address  
+  
+${response.github}  
+  
+  
+  
+### Licensing  
+  
     \n`, (error) => error ? console.log(error) : console.log('README generator'));
 
 for (const element of response.license) {

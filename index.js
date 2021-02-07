@@ -50,16 +50,15 @@ inquirer.prompt([
         name: 'license',
         message: 'What licensing are you using for your program?',
         choices: [
-            {name: 'apache', short: '1', value: 'apache', checked: false },
-            {name: 'gpl', short: '2', value: 'gpl', checked: false },
-            {name: 'mpl', short: '3', value: 'mpl', checked: false },
-            {name: 'expat', short: '4', value: 'expat', checked: false },
+            {name: 'Apache', short: '1', value: 'assets/apache.png', },
+            {name: 'GPL', short: '2', value: 'assets/gpl.png',  },
+            {name: 'Mozilla', short: '3', value: 'assets/mozilla.png', },
+            {name: 'BSD', short: '4', value: 'assets/bsd.png', },
         ]
     }
 ]).then(response => {
-
     fs.writeFileSync('README.md', 
-`# ${response.title}  
+`# ${response.title} <img align="right" src="${response.license}">
 &nbsp;  
 &nbsp;  
 &nbsp;  

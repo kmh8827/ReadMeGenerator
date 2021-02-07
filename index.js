@@ -96,7 +96,7 @@ ${response.github}
     \n`, (error) => error ? console.log(error) : console.log('README generator'));
 
 for (const element of response.license) {
-    fs.appendFileSync('README.md',`${element}\r\n`, (error) => error ? console.log(error) : console.log('Checkbox'));
+    fs.appendFileSync('README.md',`* ${element}\r\n`, (error) => error ? console.log(error) : console.log('Checkbox'));
 }
 
 });

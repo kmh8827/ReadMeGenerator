@@ -1,39 +1,39 @@
 # Title 
 
-ReadME Generator
+K
 
 ### Description 
 
-This program helps users generate a professional ReadME.md file for their programs
+E
 
 ### Installation Instructions
 
-Simply open the program and run inside your terminal
+V
 
 ### What The Program Can Do
 
-Install nodejs and inquirer
+I
 
 ### Contribution Instructions
 
-Give me money
+N
 
 ### User Instructions
 
-Install the shit and run the shit
+H
 
 ### Email Address
 
-noya@business.com
+E
 
 ### Github Address
 
-nonyayo
+L
 
 ### Liscensing
 
     
-apache
-gpl
-mpl
-expat
+* apache
+* gpl
+* mpl
+* expat

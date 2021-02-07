@@ -24,15 +24,15 @@ V
 &nbsp;  
 ### Usage  
 &nbsp;  
-I  
+  
 &nbsp;  
 ### Contributing  
 &nbsp;  
-N  
+  
 &nbsp;  
 ### Test Instructions  
 &nbsp;  
-H  
+  
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -40,15 +40,17 @@ H
 &nbsp;  
 ### Email Address  
 &nbsp;  
-For further questions contact me at: E  
+For further questions contact me at:   
 &nbsp;  
 ### Github Address  
 &nbsp;  
-github.com/L  
+github.com/  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 ### Licensing  
 &nbsp;  
     
-* apache
+* g
+* p
+* l

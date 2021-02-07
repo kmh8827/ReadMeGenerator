@@ -46,7 +46,7 @@ inquirer.prompt([
         message: 'What is your github username?'
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'What licensing are you using for your program?',
         choices: [
@@ -111,12 +111,8 @@ github.com/${response.github}
 &nbsp;  
 ### Licensing  
 &nbsp;  
+${response.license}
     \n`, (error) => error ? console.log(error) : console.log('README generator'));
-
-for (const element of response.license) {
-    fs.appendFileSync('README.md',`* ${element}\r\n`, (error) => error ? console.log(error) : console.log('Checkbox'));
-}
-
 });
 
 

@@ -1,10 +1,10 @@
-# ReadMe Generator <img align="right" src=" ">
+# k <img align="right" src="assets/apache.png">
 &nbsp;  
 &nbsp;  
 &nbsp;  
 ### Description  
 &nbsp;  
-This program will allow a user to create a README.md file for their program in a flash  
+k  
 &nbsp;  
 &nbsp;  
 ## Table of Contents  
@@ -20,19 +20,19 @@ This program will allow a user to create a README.md file for their program in a
 &nbsp;  
 ### Installation  
 &nbsp;  
-install the file, node.js, and get the required packages  
+k  
 &nbsp;  
 ### Usage  
 &nbsp;  
-simply run the index.js file  
+k  
 &nbsp;  
 ### Contributing  
 &nbsp;  
-You can contact me and talk about what you want to add, from there I will add your additions  
+k  
 &nbsp;  
 ### Test Instructions  
 &nbsp;  
-In order to test the program you will want to run it and examine the outcome  
+k  
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -40,15 +40,15 @@ In order to test the program you will want to run it and examine the outcome
 &nbsp;  
 ### Email Address  
 &nbsp;  
-For further questions contact me at: kevinhellman94@gmail.com  
+For further questions contact me at: k  
 &nbsp;  
 ### Github Address  
 &nbsp;  
-github.com/kmh8827  
+github.com/k  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 ### Licensing  
 &nbsp;  
- 
     
+Apache

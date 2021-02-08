@@ -13,7 +13,7 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'description',
-        message: 'Please enter a brief descript of your program?'
+        message: 'Please enter a brief description of your program?'
     },
     {
         type: 'input',
@@ -112,8 +112,22 @@ github.com/${response.github}
 &nbsp;  
 ### Licensing  
 &nbsp;  
-${response.license}
     \n`, (error) => error ? console.log(error) : console.log('README generator'));
+if (response.license === 'assets/apache.png') {
+    fs.appendFileSync('README.md', `Apache`);
+}
+if (response.license === 'assets/pgl.png') {
+    fs.appendFileSync('READMME.md', `PGL`);
+}
+if (response.license === 'assets/mozilla.png') {
+    fs.appendFileSync('README.md', `Mozilla`);
+}
+if (response.license === 'assets/bsd.png') {
+    fs.appendFileSync('README.md', `BSD`);
+}
+if (response.license === ' ') {
+    fs.appendFileSync('README.md', 'No Licensing');
+}
 });
 
 

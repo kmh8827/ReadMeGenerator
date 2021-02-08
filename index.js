@@ -1,6 +1,6 @@
+// Things that you need to be included
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { fileURLToPath } = require('url');
 
 //Inputs: title, description, installation, usage, contribution, test instructions, github username, e-mail
 //Checkbox: license
@@ -33,7 +33,7 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'instructions',
-        message: 'Instructions for users?'
+        message: 'Instructions for users to test program?'
     },
     {
         type: 'input',
@@ -50,13 +50,15 @@ inquirer.prompt([
         name: 'license',
         message: 'What licensing are you using for your program?',
         choices: [
-            {name: 'Apache', short: '1', value: 'assets/apache.png', },
-            {name: 'GPL', short: '2', value: 'assets/gpl.png',  },
-            {name: 'Mozilla', short: '3', value: 'assets/mozilla.png', },
-            {name: 'BSD', short: '4', value: 'assets/bsd.png', },
+            {name: 'Apache', short: '1', value: 'assets/apache.png' },
+            {name: 'GPL', short: '2', value: 'assets/gpl.png'  },
+            {name: 'Mozilla', short: '3', value: 'assets/mozilla.png' },
+            {name: 'BSD', short: '4', value: 'assets/bsd.png' },
+            {name: 'None', short: 5, value: ' '}
         ]
     }
 ]).then(response => {
+    // Creates a readme with the entered information
     fs.writeFileSync('README.md', 
 `# ${response.title} <img align="right" src="${response.license}">
 &nbsp;  

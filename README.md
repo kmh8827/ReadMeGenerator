@@ -4,7 +4,7 @@
 &nbsp;  
 ### Description  
 &nbsp;  
-This program allows a user to quickly create a README.md File for their web application  
+Creates a ReadMe for the users program  
 &nbsp;  
 &nbsp;  
 ## Table of Contents  
@@ -20,19 +20,19 @@ This program allows a user to quickly create a README.md File for their web appl
 &nbsp;  
 ### Installation  
 &nbsp;  
-Download Node.js as well as the necessary packages  
+go to getup and download files  
 &nbsp;  
 ### Usage  
 &nbsp;  
-Simply run the index.js file  
+run the index.js through node js  
 &nbsp;  
 ### Contributing  
 &nbsp;  
-You can contact me at my email address and send me additions or simply let me know what you want to contribute  
+contact me at my email adderss  
 &nbsp;  
 ### Test Instructions  
 &nbsp;  
-Run the program and answer all the questions, then check the .md file to make sure everything looks right  
+run the program and see if the read-me looks good  
 &nbsp;  
 &nbsp;  
 &nbsp;  

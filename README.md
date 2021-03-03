@@ -1,10 +1,10 @@
-# Read-Me Generator <img align="right" src="assets/apache.png">
+# Employee Tracker <img align="right" src=" ">
 &nbsp;  
 &nbsp;  
 &nbsp;  
 ### Description  
 &nbsp;  
-Creates a ReadMe for the users program  
+This program allows a user to keep track of thier employees, departments and roles for their company  
 &nbsp;  
 &nbsp;  
 ## Table of Contents  
@@ -20,19 +20,19 @@ Creates a ReadMe for the users program
 &nbsp;  
 ### Installation  
 &nbsp;  
-go to getup and download files  
+Simply download the file from github and then run npm i  
 &nbsp;  
 ### Usage  
 &nbsp;  
-run the index.js through node js  
+Answer the command line commands as they come up  
 &nbsp;  
 ### Contributing  
 &nbsp;  
-contact me at my email adderss  
+Contact me at my E-mail address  
 &nbsp;  
 ### Test Instructions  
 &nbsp;  
-run the program and see if the read-me looks good  
+type npm start and the program will run, then simply follow the prompts  
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -51,4 +51,4 @@ github.com/kmh8827
 ### Licensing  
 &nbsp;  
     
-Apache
+No Licensing
